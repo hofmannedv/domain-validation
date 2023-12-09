@@ -50,8 +50,9 @@ for tld in listOfTlds:
     # - assign default weight
     weight = individualWeights["default"]
 
-    # is current tld in table individualWeights
+    # - is current tld in table individualWeights?
     if tld in individualWeights.keys():
+       # yes, so take corresponding weight from table 
        weight = individualWeights[tld]
 
     # output entries based on weight per tld
